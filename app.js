@@ -9,8 +9,6 @@ app.use(express.static("public"))
 app.set("view engine", "ejs");
 const { log } = require("console");
 
-//API KEY - 75a7405c19ea0994ec4e4b82b78e39a2
-
 app.get("/", (req, res) => {
     res.render("home");
 })
