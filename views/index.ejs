@@ -1,10 +1,18 @@
 <%- include("./partials/header") %>
 
-    <div class="container">
-        <p>
+
+<div class="container">
+        <div class="icon">
+            <img src="https://openweathermap.org/img/wn/<%=icon%>@2x.png" alt="weather icon">
+        </div>
+        <div class="weatherData">
+            <p>
                 <%= main %>
-                    <%= temp %>
-        </p>
+            </p>
+            <p>
+                <%= temp %> &deg;C
+            </p>
+        </div>
     </div>
 
 
